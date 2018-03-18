@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/anchor_tagContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a930c3a6"
+        app:tabMode="scrollable"
+
+        />
+
+    <com.ithomework.maodian.ScrollChangedScrollView
+        android:id="@+id/anchor_bodyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/anchor_tagContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:text="常用"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.ithomework.maodian.MyGridView
+                    android:id="@+id/grid_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:text="质量"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.ithomework.maodian.MyGridView
+                    android:id="@+id/grid_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:text="背背"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.ithomework.maodian.MyGridView
+                    android:id="@+id/grid_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:text="EAS"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.ithomework.maodian.MyGridView
+                    android:id="@+id/grid_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:text="产品"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.ithomework.maodian.MyGridView
+                    android:id="@+id/grid_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.ithomework.maodian.ScrollChangedScrollView>
+
+</RelativeLayout>
