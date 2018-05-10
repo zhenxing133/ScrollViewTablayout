@@ -155,6 +155,34 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
+                /**
+                 * 此方法不做处理，会有第一个tab跟最后一个tab切换不过去的bug
+                 */
+                tagFlag = false;
+                // 根据点击的位置，使ScrollView 滑动到对应区域
+                int position = tab.getPosition();
+                Log.e("yzx", "position=" + position);
+                // 计算点击的导航标签所对应内容区域的高度
+                int targetY = 0;
+                switch (position) {
+                    case 0:
+                        break;
+                    case 1:
+                        targetY = ll_2.getTop();
+                        break;
+                    case 2:
+                        targetY = ll_3.getTop();
+                        break;
+                    case 3:
+                        targetY = ll_4.getTop();
+                        break;
+                    case 4:
+                        targetY = ll_5.getTop();
+                        break;
+
+                }
+                // 移动到对应的内容区域
+                sv_bodyContainer.smoothScrollTo(0, targetY);
             }
         });
 
@@ -178,42 +206,26 @@ public class MainActivity extends AppCompatActivity {
             if (scrollY > ll_5.getTop()) {
 
                 refreshContent2NavigationFlag(4);
+
             } else if (scrollY > ll_4.getTop()) {
 
                 refreshContent2NavigationFlag(3);
+
             } else if (scrollY > ll_3.getTop()) {
 
                 refreshContent2NavigationFlag(2);
+
             } else if (scrollY > ll_2.getTop()) {
 
                 refreshContent2NavigationFlag(1);
-//        } else if (scrollY > ll_5.getTop()) {
-//            refreshContent2NavigationFlag(5);
-//        }else {
+
             }else{
+
                 refreshContent2NavigationFlag(0);
             }
         }
 
 
-//        if (scrollY > ll_5.getTop()) {
-//            refreshContent2NavigationFlag(5);
-//
-//        } else if (scrollY > ll_4.getTop()) {
-//            refreshContent2NavigationFlag(4);
-//
-//        } else if (scrollY > ll_3.getTop()) {
-//            refreshContent2NavigationFlag(3);
-//
-//        } else if (scrollY > ll_2.getTop()) {
-//            refreshContent2NavigationFlag(2);
-//
-//        }else if (scrollY > 0 ll_1.getTop()) {
-//            refreshContent2NavigationFlag(1);
-//        }else {
-//            refreshContent2NavigationFlag(0);
-//
-//        }
     }
 
     /**

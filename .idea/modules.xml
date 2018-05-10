@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MaoDian.iml" filepath="$PROJECT_DIR$/MaoDian.iml" />
+      <module fileurl="file://C:\Users\yuan.zhen.xing\Desktop\ScrollViewTablayout\ScrollViewTablayout\MaoDian.iml" filepath="C:\Users\yuan.zhen.xing\Desktop\ScrollViewTablayout\ScrollViewTablayout\MaoDian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScrollViewTablayout.iml" filepath="$PROJECT_DIR$/ScrollViewTablayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
